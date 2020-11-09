@@ -1,0 +1,12 @@
+$gray: #505050;
+$blue: #6ef5ea;
+$text: #666767;
+$bg: #eff0f2;
+
+@mixin title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 38px;
+    line-height: 28px;
+}

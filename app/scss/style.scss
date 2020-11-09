@@ -1,8 +1,214 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+//start header
+.header{
+    background-color: $bg;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 110px;
+    margin-bottom: 200px;
 }
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.header__hamburger-menu{
+    width: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover .header__hamburger-menu-line:nth-child(2n){
+        background-color: rgba($blue, .5);
+    }
+}
+.header__hamburger-menu-line{
+    height: 4px;
+    background-color: $gray;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.header__hamburger-menu-line:not(:last-child){
+    margin-bottom: 5px;
+}
+.color-change:not(:nth-child(2n)){
+    background-color: rgba($blue, .5);
+}
+.header__menu-list{
+    display: none;
+    li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 500;
+        transition: all 0.3s;
+        position: relative;
+        &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            background: $blue;
+            transition: all 0.3s;
+        }
+        &:hover{
+            &:before{
+                width: 100%;
+                height: 2px;
+                left: 0;
+                background: $blue;
+            }
+        }
+    }
+}
+.header__banner{
+    text-align: center;
+}
+.header-banner__title{
+    margin-bottom: 140px;
+    *{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: $gray;
+        font-size: 48px;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+    }
+}
+.blue-bg{
+    background-color: rgba($blue, .5);
+}
+.header-banner__link{
+    padding-bottom: 195px;
+    *{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: $text;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 17px 45px;
+        border: 2px solid #777879;
+        transition: all .3s;
+        &:hover{
+            background-color: rgba($blue, .5);
+        }
+    }
+}
+//end header
+//start about
+.about{
+    background-color: #f8fafa;
+    padding-bottom: 110px;
+}
+.about-top{
+    padding-top: 130px;
+    text-align: center;
+    margin-bottom: 145px;
+}
+.about-top__title{
+    *{
+        @include title;
+        margin-bottom: 15px;
+    }
+}
+.about-top__description{
+    *{
+        font-family: 'Merriweather', serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $text;
+    }
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content__slider{
+    max-width: 480px;
+}
+.about-content__slider-item{
+    width: 390px;
+    height: 483px;
+    position: relative;
+    margin-bottom: 40px;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 410px;
+        background-color: $bg;
+        top: 40px;
+        left: 4px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 410px;
+        background-color: $bg;
+        left: -44px;
+        top: 40px;
+    }
+    a{
+        display: block;
+    }
+    img{
+        margin: 0 auto;
+    }
+    // img{
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    // }
+}
+.slick-dots{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    li{
+        display: inline-block;
+    }
+    li:not(:last-child){
+        margin-right: 3px;
+    }
+    button{
+        border: none;
+        // visibility: hidden;
+        width: 10px;
+        height: 10px;
+        background-color: #d0d0d0;
+        border-radius: 4px;  
+        font-size: 0; 
+        cursor: pointer;      
+    }
+    .slick-active{
+        button{
+            background-color: $blue;
+        }
+    }
+}
+.about-content__description{
+    max-width: 490px;
+}
+.about-content__description-title{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.about-content__description-text{
+    margin-bottom: 28px;
+}
+//end about
