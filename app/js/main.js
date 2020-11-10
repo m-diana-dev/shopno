@@ -8,4 +8,12 @@ $(function(){
         arrows: false,
         dots: true
       });
+
+      $('.services-content__item-link').on('click', function(){
+        $(this).next().addClass('active');
+      });
+
+      $('.close-btn').on('click', function(){
+        $(this).parent().removeClass('active');
+      });
 });

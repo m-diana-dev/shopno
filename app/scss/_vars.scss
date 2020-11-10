@@ -2,6 +2,7 @@ $gray: #505050;
 $blue: #6ef5ea;
 $text: #666767;
 $bg: #eff0f2;
+$bg2: #f9fbfb;
 
 @mixin title{
     font-family: 'Montserrat', sans-serif;
@@ -9,4 +10,13 @@ $bg: #eff0f2;
     color: #000;
     font-size: 38px;
     line-height: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+@mixin description{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text;
 }
