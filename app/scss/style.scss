@@ -115,7 +115,8 @@
 .about-content__slider{
     max-width: 480px;
 }
-.about-content__slider-img{
+.about-content__slider-img,
+.reviews-content__slider-img{
     width: 390px;
     height: 483px;
     position: relative;
@@ -123,7 +124,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0px 6px 24px 0px rgba(20, 20, 21, 0.17);
+    border-radius: 3px;
     margin: 0 auto;
+    margin-bottom: 30px;
     &::after{
         content: '';
         position: absolute;
@@ -132,6 +136,7 @@
         background-color: $bg;
         top: 40px;
         right: -40px;
+        border-radius: 3px;
     }
     &::before{
         content: '';
@@ -141,6 +146,7 @@
         background-color: $bg;
         left: -40px;
         top: 40px;
+        border-radius: 3px;
     }
 }
 .slick-dots{
@@ -155,22 +161,22 @@
     }
     button{
         border: none;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         background-color: #d0d0d0;
-        border-radius: 5px;  
+        border-radius: 3px;  
         font-size: 0; 
         cursor: pointer;  
-        outline: none;
-        border: 1px solid transparent;    
+        // outline: none;
+        // border: 2px solid transparent;
     }
     .slick-active{
         button{
             background-color: $blue;
-            &:focus{
-                border: 1px solid #777879;
+            // &:focus{
+            //     border: 2px solid #777879;
 
-            }
+            // }
         }
     }
 }
@@ -359,7 +365,8 @@
     border-bottom: 20px solid $blue;
    }
 }
-.team-content__item-name{
+.team-content__item-name,
+.reviews-text__slider-item-name{
     font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 20px;
@@ -387,3 +394,224 @@
     color: #000;
 }
 //end team
+//start rewievs
+.reviews{
+    background-color: #f9fbfb;
+}
+.slider__wrapp{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-content__slider{
+    max-width: 390px;
+}
+.reviews-content__slider-img{
+    width: 320px;
+    height: 410px;
+    &::after{
+        height: 365px;
+        top: 20px;
+    }
+    &::before{
+        height: 365px;
+        top: 20px;
+    }
+}
+.reviews-text__slider{
+    max-width: 665px;
+    margin-top: 20px;
+}
+.reviews-text__slider-item{
+    background-color: $bg;
+    padding: 100px 80px 65px;
+    min-height: 365px;
+    text-align: center;
+}
+.reviews-text__slider-item-name{
+    margin-bottom: 25px;
+}
+.reviews-text__slider-item-text{
+    line-height: 27px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.rate-star{
+    margin: 0 auto;
+}
+.slick-arrow{
+    border: none;
+    width: 53px;
+    height: 53px;
+    box-shadow: 0px 8px 11px 0px rgba(20, 20, 21, 0.05);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: $blue;
+    }
+}
+.slick-next{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img{
+        transform: rotate(180deg);
+    }
+}
+.slick-prev{
+    position: absolute;
+    right: 75px;
+    bottom: 0
+}
+//end rewievs
+//start clients
+.clients__wrapp{
+    padding: 120px 0;
+}
+.clients__row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & + .clients__row{
+        margin-top: 60px;
+    }
+}
+.clients__link:not(:last-child){
+    margin-right: 35px;
+}
+//end clients
+//start contacts
+.contacts{
+    background-image: url(../images/contacts-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contacts-content__wrapp{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+.contacts-content__form{
+    max-width: 615px;
+    width: 100%;
+    padding: 35px 30px;
+    background-color: rgba(#021623, .7);
+    input,
+    textarea{
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #6e7981;
+        background-color: transparent;
+        margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 15px;
+        padding: 5px;
+        &::placeholder{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            color: #d3d6d8;
+            font-size: 15px;
+        }
+    }
+    input{
+        height: 45px;
+    }
+    textarea{
+        resize: none;
+        height: 135px;
+        margin-bottom: 35px;
+    }
+    button{
+        border: none;
+        background-color: $blue;
+        padding: 6px 35px;
+        font-family: 'Montserrat', sans-serif;
+        color: #000;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        min-height: 54px;
+    }
+}
+.contacts-content__contacts{
+    max-width: 503px;
+    width: 100%;
+    padding: 35px 25px 20px;
+    background-color: rgba(#021623, .7);
+}
+.contacts-content__contacts-wrapp{
+    margin-bottom: 20px;
+    *{
+        color: #d3d6d8;;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+.contacts-content__contacts-link{
+    display: block;
+}
+.contacts-content__contacts-link--margin{
+    margin-bottom: 25px;
+}
+.contacts-content__map{
+    iframe{
+        width: 455px;
+        height: 225px;
+    }
+}
+//end contacts
+//start footer
+.footer{
+    background-color: #262b2e;
+}
+.footer__wrapp{
+    padding: 75px;
+    text-align: center;
+}
+.footer__title{
+    line-height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.footer_social{
+    margin-bottom: 35px;
+    .icon-item{
+        background-color: $gray;
+        width: 45px;
+        height: 40px;
+        border-left: 1px solid #383d3f;
+        border-right: 1px solid #383d3f;
+        transition: all .5s ease-in-out;
+        position: relative;
+        &:hover{
+            background-color: $blue;
+
+        }
+    }
+    .icon-item:not(:last-child){
+        margin-right: 7px;
+    }
+    .icon-facebook::before,
+    .icon-twitter::before,
+    .icon-dribbble::before,
+    .icon-pinterest-p::before{
+        font-size: 23px;
+        color: #faf4f4;
+        position: absolute;
+        left: 14px;
+        top: 8px;
+    }
+} 
+.footer_copy{
+    font-weight: 500;
+    line-height: 25px;
+    color: #969798;
+}
+//end footer
