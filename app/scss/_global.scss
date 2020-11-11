@@ -50,3 +50,31 @@ body{
 .description-title{
     @include description;
 }
+input,
+textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #6e7981;
+    background-color: transparent;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    &::placeholder{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #d3d6d8;
+        font-size: 15px;
+    }
+}
+input{
+    height: 45px;
+}
+textarea{
+    resize: none;
+    height: 135px;
+    margin-bottom: 35px;
+}

@@ -97,6 +97,7 @@
         text-transform: uppercase;
         padding: 17px 45px;
         border: 2px solid #777879;
+        cursor: pointer;
         transition: all .3s;
         &:hover{
             background-color: rgba($blue, .5);
@@ -497,46 +498,19 @@
     width: 100%;
     padding: 35px 30px;
     background-color: rgba(#021623, .7);
-    input,
-    textarea{
-        display: block;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #6e7981;
-        background-color: transparent;
-        margin-bottom: 10px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        color: #fff;
-        font-size: 15px;
-        padding: 5px;
-        &::placeholder{
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            color: #d3d6d8;
-            font-size: 15px;
-        }
-    }
-    input{
-        height: 45px;
-    }
-    textarea{
-        resize: none;
-        height: 135px;
-        margin-bottom: 35px;
-    }
-    button{
-        border: none;
-        background-color: $blue;
-        padding: 6px 35px;
-        font-family: 'Montserrat', sans-serif;
-        color: #000;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 2px;
-        cursor: pointer;
-        min-height: 54px;
-    }
+}
+.form-btn{
+    border: none;
+    background-color: $blue;
+    padding: 6px 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    min-height: 54px;
+    text-transform: uppercase;
 }
 .contacts-content__contacts{
     max-width: 503px;
@@ -594,6 +568,9 @@
             background-color: $blue;
 
         }
+        &:hover::before {
+            color: #000;
+        }
     }
     .icon-item:not(:last-child){
         margin-right: 7px;
@@ -607,6 +584,7 @@
         position: absolute;
         left: 14px;
         top: 8px;
+        transition: all .5s ease-in-out;
     }
 } 
 .footer_copy{
@@ -615,3 +593,19 @@
     color: #969798;
 }
 //end footer
+//start connection
+#connection{
+    background-color: $bg;
+    max-width: 730px;
+    width: 100%;
+}
+.connection__form{
+    input,
+    textarea{
+        color: #000;
+        &::placeholder{
+            color: #000;
+        }
+    }
+}
+//end connection

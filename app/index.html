@@ -27,12 +27,12 @@
                         <div class="header__hamburger-menu-line"></div>
                     </div>
                     <ul class="header__menu-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Работы</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">О нас говорят</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#works">Работы</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#reviews">О нас говорят</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,13 +42,13 @@
                         <h1>Скажи привет <span class="blue-bg">SHOPNO!</span> Корпоративное <span class="blue-bg">агентство</span> SHOPNO</h1>
                     </div>
                     <div class="header-banner__link">
-                        <a href="#">Свяжись с нами</a>
+                        <a data-fancybox data-src="#connection">Свяжись с нами</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="about section">
+    <section class="about section" id="about">
         <div class="container">
             <div class="about__wrapp">
                 <div class="about-top top">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </section>
-    <section class="works section">
+    <section class="works section" id="works">
         <div class="container">
             <div class="works-top top">
                 <h2 class="works-top__title title">Лучшие работы</h2>
@@ -117,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="services section">
+    <section class="services section" id="services">
         <div class="container">
             <div class="services-top top">
                 <h2 class="about-top__title title">Наши услуги</h2>
@@ -189,7 +189,7 @@
             </div>
         </div>
     </section>
-    <section class="team section">
+    <section class="team section" id="team">
         <div class="container">
             <div class="team-top top">
                 <h2 class="team-top__title title">Команда</h2>
@@ -279,7 +279,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews section">
+    <section class="reviews section" id="reviews">
         <div class="container">
             <div class="reviews-top top">
                 <h2 class="reviews-top__title title">О нас говорят</h2>
@@ -335,7 +335,7 @@
             </div>
         </div>
     </section>
-    <section class="clients">
+    <section class="clients" id="clients">
         <div class="container">
             <div class="clients__wrapp">
                 <div class="clients__row">
@@ -354,7 +354,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts-content">
                 <div class="contacts-content__wrapp">
@@ -364,7 +364,7 @@
                             <input type="text" placeholder="Тема*" required>
                             <input type="text" placeholder="Email*" required>
                             <textarea placeholder="Сообщение*" required></textarea>
-                            <button>Отправить</button>
+                            <button class="form-btn" type="submit">Отправить</button>
                         </form>
                     </div>
                     <div class="contacts-content__contacts">
@@ -398,6 +398,19 @@
             </div>
         </div>
     </footer>
+
+
+    <div id="connection">
+        <div class="connection__form">
+            <form>
+                <input type="text" placeholder="Имя*" required>
+                <input type="text" placeholder="Тема*" required>
+                <input type="text" placeholder="Email*" required>
+                <textarea placeholder="Сообщение*" required></textarea>
+                <button class="form-btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
