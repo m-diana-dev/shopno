@@ -208,6 +208,11 @@
     height: 360px;
     // flex-basis: calc(33.3333% - 30px);
     // margin-right: 30px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .works-content__item:not(:nth-child(3n)),
 .team-content__item:not(:nth-child(3n)){
@@ -339,6 +344,11 @@
     max-width: 370px;
     height: 440px;
     position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     &:hover{
         .team-content__item-description{
             display: flex;
@@ -349,7 +359,7 @@
     position: absolute;
     background-color: $blue;
     width: 335px;
-    height: 240px;
+    min-height: 240px;
     bottom: 15px;
     left: 15px;
     padding: 35px;
@@ -420,6 +430,7 @@
 }
 .reviews-text__slider{
     max-width: 665px;
+    width: 100%;
     margin-top: 20px;
 }
 .reviews-text__slider-item{
@@ -467,15 +478,22 @@
 //end rewievs
 //start clients
 .clients__wrapp{
-    padding: 120px 0;
+    padding: 120px 0 60px;
 }
 .clients__row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    & + .clients__row{
-        margin-top: 60px;
-    }
+}
+.clients__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clients__link{
+    width: 135px;
+    height: 60px;
+    margin-bottom: 60px;
 }
 .clients__link:not(:last-child){
     margin-right: 35px;
@@ -521,7 +539,7 @@
 .contacts-content__contacts-wrapp{
     margin-bottom: 20px;
     *{
-        color: #d3d6d8;;
+        color: #d3d6d8;
         font-size: 15px;
         line-height: 24px;
     }
@@ -609,3 +627,5 @@
     }
 }
 //end connection
+
+@import 'media';

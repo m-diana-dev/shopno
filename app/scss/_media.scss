@@ -1,0 +1,365 @@
+@media (max-width: 1170px){
+    .works-content__items,
+    .team-content__items{
+        justify-content: center;
+    }
+    .works-content__item {
+        min-width: 49%;
+        height: 390px;
+    }
+    .team-content__item {
+        min-width: 49%;
+        width: 100%;
+    }
+    .team-content__item-description {
+        width: 93%;
+    }
+    .works-content__item:not(:nth-child(3n)),
+    .team-content__item:not(:nth-child(3n)){
+        margin-right: 0;
+    }
+    .works-content__item:nth-child(odd),
+    .team-content__item:nth-child(odd){
+        margin-right: 15px;
+    }
+    .works-content__item:not(:nth-child(n+4)),
+    .team-content__item:not(:nth-child(n+4)){
+        margin-bottom: 15px;
+    }
+    .contacts-content__wrapp{
+        flex-direction: column;
+    }
+    .contacts-content__form{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .contacts-content__contacts{
+        max-width: 100%;
+    }
+    .contacts-content__map{
+        iframe{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .reviews-text__slider {
+        margin: 0 auto;
+    }
+    .slick-prev,
+    .slick-next{
+        bottom: -70px;
+    }
+    .reviews-content__slider{
+        display: none;
+    }
+    .reviews-text__slider{
+        margin-bottom: 90px;
+    }
+    .reviews-text__slider-item{
+        min-height: auto;
+    }
+    .services-content__item-more {
+        padding: 40px 95px 20px 45px;
+    }
+    .services-content__item-title {
+        margin-bottom: 10px;
+    }
+    .services-content__item-description {
+        margin-bottom: 10px;
+    }
+    .services-content__item {
+        padding: 125px 60px 20px 30px;
+    }
+}
+@media (max-width: 1050px){
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .about-content__description {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-content__slider {
+        margin: 0 auto;
+    }
+    .top {
+        padding-top: 110px;
+        margin-bottom: 125px;
+    }
+    .services-content__item:nth-child(1), 
+    .services-content__item:nth-child(3), 
+    .services-content__item:nth-child(6){
+        grid-column: span 6;
+    }
+    .services-content__item:nth-child(2), 
+    .services-content__item:nth-child(4), 
+    .services-content__item:nth-child(5) {
+        grid-column: span 6;
+    }
+}
+@media (max-width: 900px){
+    .header-banner__title{
+        margin-bottom: 120px;
+        *{
+            font-size: 38px;
+            line-height: 55px;
+        }
+    }
+    .header__menu{
+        display: block;
+    }
+    .header__menu-list{
+        display: none;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        z-index: 1;
+        padding: 40px 20px;
+        background-color: rgba($color: #000, $alpha: 0.9);
+        border: 2px solid #777879;
+        width: 75%;
+        // height: 100vh;
+        text-align: right;
+        li{
+            margin-right: 0;
+            display: block;
+            a{
+                width: 100%;
+                color: #d3d6d8;
+            }
+        }
+        li:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    .title{
+        font-size: 33px;
+        line-height: 23px;
+    }
+    .description-title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about-content__description-title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .clients__row-bottom{
+        justify-content: space-around;
+    }
+    .clients__row-top{
+        justify-content: space-around;
+    }
+    .clients__link:not(:last-child){
+        margin-right: 15px;
+    }
+    .services-content__item:nth-child(1), 
+    .services-content__item:nth-child(3), 
+    .services-content__item:nth-child(6){
+        grid-column: span 12;
+    }
+    .services-content__item:nth-child(2), 
+    .services-content__item:nth-child(4), 
+    .services-content__item:nth-child(5){
+        grid-column: span 12;
+    }
+}
+@media (max-width: 784px){
+    .works-content__item{
+        min-width: 100%;
+        height: 390px;
+    }
+    .team-content__item{
+        min-width: 60%;
+    }
+    .works-content__item:nth-child(odd),
+    .team-content__item:nth-child(odd){
+        margin-right: 0;
+    }
+    .works-content__item:not(:nth-child(3n)),
+    .team-content__item:not(:nth-child(3n)){
+        margin-right: 0;
+    }
+    .works-content__item:nth-child(odd),
+    .team-content__item:nth-child(odd){
+        margin-right: 0;
+    }
+    .works-content__item,
+    .team-content__item{
+        margin-bottom: 15px;
+    }
+    .footer__wrapp {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 600px){
+    .header-banner__title{
+        margin-bottom: 100px;
+        *{
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+    .header-banner__link{
+        *{
+            font-size: 16px;
+            padding: 15px 40px;
+        }
+    }
+    .title {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .top {
+        padding-top: 90px;
+        margin-bottom: 105px;
+    }
+    .about-content__slider-img{
+        width: 360px;
+        height: 453px;
+        margin-bottom: 15px;
+        &::before,
+        &::after{
+            top: 20px;
+        }
+    }
+    .section {
+        padding-bottom: 80px;
+    }
+    .reviews-text__slider-item {
+        padding: 80px 60px 45px;
+    }
+}
+@media (max-width: 500px){
+    .about-content__slider {
+        max-width: 100%;
+    }
+    .about-content__slider-img{
+        width: 300px;
+        height: 393px;
+        &::before,
+        &::after{
+            height: 345px;
+            top: 22px;
+            width: 20px;
+        }
+        &::after{
+            right: -20px;
+        }&::before{
+            left: -20px;
+        }
+    }
+    .slick-dots{
+        li{
+            display: none;
+        }
+    }
+    .slick-arrow{
+        display: none;
+    }
+    .reviews-text__slider{
+        margin-bottom: 0;
+    }
+    .form-btn {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .services-content__item-more{
+        padding: 20px 25px 15px 25px;
+    }
+    .services-content__item-title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .services-content__item{
+        padding: 105px 30px 20px 15px;
+    }
+    .services-content__item-link {
+        font-size: 16px;
+    }
+    .services-content__item-link::before {
+        left: 145px;
+    }
+    #connection {
+        padding: 20px;
+        padding-top: 40px;
+    }
+}
+@media (max-width: 450px){
+    .team-content__item {
+        max-width: 350px;
+        height: 410px;
+    }
+    .team-content__item-description{
+        width: 315px;
+        min-height: 220px;
+    }
+    .reviews-text__slider-item {
+        padding: 60px 40px 25px;
+    }
+    .reviews-text__slider-item-name {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 380px){
+    .about-content__slider-img {
+        width: 250px;
+        height: 343px;
+        box-shadow: none;
+        &::before,
+        &::after{
+            height: 280px;
+            top: 32px;
+        }
+    }
+    .works-content__item{
+        min-width: 290px;
+        height: 280px;
+    }
+    .team-content__item {
+        max-width: 330px;
+        height: 390px;
+    }
+    .team-content__item-description{
+        width: 295px;
+        min-height: 200px;
+    }
+    .reviews-text__slider-item{
+        padding: 30px 10px 20px;
+    }
+    .services-content__item{
+        padding: 80px 20px 20px 15px;
+    }
+    #connection{
+        padding: 10px;
+        
+        padding-top: 45px;
+        textarea {
+            margin-bottom: 20px;
+        }
+    }
+    .form-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 360px){
+    .team-content__item {
+        max-width: 300px;
+        height: 360px;
+    }
+    .team-content__item-description{
+        width: 265px;
+    }
+    .clients__link {
+        width: 164px;
+        height: 70px;
+    }
+    .clients__link:not(:last-child) {
+        margin-right: 0;
+    }
+    .services-content__item-more{
+        padding: 10px 10px 10px 10px;
+    }
+}
