@@ -109,8 +109,7 @@
     .header__menu{
         display: block;
     }
-    .header__menu-list{
-        display: none;
+    .header__menu-list.header__menu-list--active{
         position: absolute;
         top: 110px;
         right: 0;
